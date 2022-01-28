@@ -1,0 +1,385 @@
+@import 'utilities.css';
+
+:root{
+    --purpledark: #561742;
+    --purplelight:#BB4F8F;
+    --orangepri: #FE5433;
+    --orangedark: #FD6001;
+    --black: black;
+    --white: #fafafa;
+    --wine: #910b40;
+    --greylight: #e6e6e6;
+    --blacklight: #282422;
+    --whitecream: #FFFBDB;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'poppins', sans-serif;
+    background: var(--whitecream);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+                            /* HEADER */
+
+header{
+    background: var(--purpledark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 85%, 0 100%);
+    /* before height:800px; */
+}
+
+.container{
+    padding: 80px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+
+header nav .left a{
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+header nav .left a:hover{
+    color:var(--orangepri);
+
+}
+
+header nav {
+    padding: 0rem 0;
+}
+
+header nav .logo{
+    margin-right: 3rem;
+}
+
+                            /* HERO */
+
+.hero{
+    padding:0rem 0;
+}
+.hero .left img{
+    width: 420px;
+    box-shadow: 5, 5 black;
+}
+
+.hero .right{
+    color: var(--white);
+}
+
+.hero .right h6{
+    font-size: 1.4rem;
+    color: var(--orangepri);
+    margin-bottom: 0.5rem;
+}
+
+.hero .right h1{
+    font-size: 1.6rem;
+    font-weight: 10;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero .right h1 span{
+    color: var(--orangepri);
+}
+
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/*.hero .right{
+    margin-top:1rem;
+} */
+
+                            /* ABOUT ME */
+
+section{
+    padding: 4rem 0;
+}
+
+section.about{
+    display: flex;
+    background: var(--whitecream);
+}
+
+section .about-img{
+    height: 360px;
+}
+
+section.about h1{
+    margin-bottom: 0.3rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+section.about h1 span{
+    color: var(--orangepri);
+}
+
+section.about h3{
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+section.about p{
+    font-family: 'Lato', sans-serif;
+    color: var(black);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+section.about .icons{
+    height: 35px;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.6rem;
+    transition: all .3s ease;
+}
+
+section.about .icons:hover{
+    background: #FFE5D9;
+
+}
+
+
+
+                            /* PORTFOLIO */
+
+
+section.portfolio{
+    background:var(--purpledark);
+    clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 90%, 0 100%);
+    padding-bottom: 12rem;
+}
+
+section.portfolio .section-heading{
+    color:var(--white);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 0.5;
+    font-weight: 400;
+}
+
+section.portfolio .section-heading + p{
+    color: var(--white);
+    font-family: 'Lato' sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+section.portfolio .section-heading span{
+    color:var(--orangepri);
+    
+}
+
+section.portfolio .cards-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+    
+}
+
+section.portfolio .cards-wrapper .cards{
+    background: var(--white);
+}
+
+section.portfolio .cards-wrapper .cards .img-wrapper{
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+
+/*section.portfolio .cards-wrapper .cards .img-wrapper{
+    width:  100px;
+    height: 100px;
+    background-size: cover;
+}*/
+section.portfolio .cards-wrapper .cards .card-content{
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+section.portfolio .cards-wrapper .cards .card-content h1{
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 800;
+    margin-bottom: -1rem;
+}
+
+section.portfolio .cards-wrapper .cards .card-content a{
+    color: var(--orangepri);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+section.portfolio .cards-wrapper .cards .card-content a:hover{
+    color:var(--purpledark);
+
+}
+
+section.portfolio .cards-wrapper .cards .card-content span{
+    color: var(--blacklight);
+    font-size: 0.8rem;
+}
+
+section.portfolio .cards-wrapper .cards .card-content p{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+    color: var(--black);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+                            /* CORE VALUES */
+
+section.corevalues .section-heading{
+    color: var(--black);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 0.5;
+    font-weight: 400;
+ }
+                            
+ section.corevalues .section-heading span{
+    color:var(--orangepri);
+}
+                            
+section.corevalues .section-heading + p{
+    color:var(--black);
+    font-family: 'Lato' sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 4rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    text-align: center;
+}
+
+section.corevalues{
+    background:var(--whitecream);
+}
+
+section.corevalues .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr); /* 1fr 1fr 1fr */
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+}   
+
+
+section.corevalues .card-wrapper .card{
+    background:var(--white);
+    padding: 3rem 3rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all .3s ease;
+    box-shadow: 10px 10px rgb(252, 141, 101);
+}
+
+section.corevalues .card-wrapper .card img{
+    position: absolute;
+    height: 120px;
+    top:-4rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+section.corevalues .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 1;
+}
+
+section.corevalues .card-wrapper .card p{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+    color: var(--black);
+    line-height: 2;
+}
+
+section.corevalues .card-wrapper .card:hover{
+    background: rgba(255, 94, 35, 0.904);
+}
+
+section.corevalues .card-wrapper .card:hover h2, section.service .card-wrapper .card:hover p{
+    color: var(--pure);
+}
+
+                            /*CONTACT*/
+
+section.contact .section-heading{
+    color: var(--white);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 8rem;
+    line-height: 0.5;
+    font-weight: 400;
+ }
+
+ section.contact{
+    background:var(--purpledark);
+    clip-path: polygon(0 0, 50% 20%, 100% 0, 100% 100%, 0 100%);
+    padding-bottom: 12rem;
+    text-align: center;
+     
+ }
+                            
+ section.contact .section-heading span{
+    color:var(--orangepri);
+}
+                            
+section.contact .section-heading + h2{
+    color:var(--white);
+    font-family:'Indie Flower', cursive;
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+section.contact .cv-btn{
+margin-bottom: 2rem;
+}
+
+footer .contact-social a{
+    margin-right: 3rem;
+    margin-bottom: -1rem;
+}
+
+footer .contact-social .contact-icons{
+    height: 50px;
+}
+
+                            /* FOOTER */
+footer{
+    background: var(--purpledark);
+    text-align: center;
+}
+
+footer .footer-logo{
+    height: 50px;
+    margin-top: 0rem;
+    margin-bottom: 1.5rem;
+}

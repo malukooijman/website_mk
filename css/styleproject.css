@@ -1,0 +1,251 @@
+@import 'utilities.css';
+
+:root{
+    --purpledark: #561742;
+    --purplelight:#BB4F8F;
+    --orangepri: #FE5433;
+    --orangedark: #FD6001;
+    --black: black;
+    --white: #fafafa;
+    --wine: #910b40;
+    --greylight: #e6e6e6;
+    --blacklight: #282422;
+    --whitecream: #FFFBDB;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'poppins', sans-serif;
+    background: #cc5500;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+                            /* HEADER */
+
+header{
+    background: var(--purpledark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 85%, 0 100%);
+    
+    /* before height:800px; */
+}
+
+.container{
+    padding:0 80px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    
+}
+
+header nav .left a{
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+header nav .left a:hover{
+    color:var(--orangepri);
+
+}
+
+header nav {
+    padding: 0rem 0;
+}
+
+header nav .logo{
+    margin-right: 3rem;
+}
+
+section{
+    padding: 2rem 2rem;
+}
+
+                        /* BESPOKE - INTRO */
+
+section.bespoke-intro{
+    display: flex;
+    background: #cc5500;
+    }
+                            
+section.bespoke-intro .bespoke-img{
+    height: 360px;
+}
+
+section.bespoke-intro .bespoke-storyboard{
+        height: 600px;
+        width: 800px;
+}
+
+section.bespoke-intro .mc-final{
+    height: 300px;
+    width: 450px;
+}
+                            
+section.bespoke-intro h1{
+    margin-bottom: 0.3rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+                            
+section.bespoke-intro h1 span{
+    color: var(--orangepri);
+}
+                            
+section.bespoke-intro h3{
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+                            
+section.bespoke-intro{
+    font-family: 'Lato', sans-serif;
+    color: var(black);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+                           /*RESEARCH*/
+
+
+section.research{
+    background:var();
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 90%, 0 100%);
+    padding-bottom: 8rem;
+}
+
+section.research .section-heading{
+    color:var(--white);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 0.5;
+    font-weight: 400;
+}
+
+section.research .section-heading + p{
+    color: var(--white);
+    font-family: 'Lato' sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+section.research .cards-wrapper{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 1rem;
+    
+}
+
+section.research .cards-wrapper .cards{
+    background: var(--white);
+}
+
+section.research .cards-wrapper .cards .img-wrapper{
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+
+/*section.research .cards-wrapper .cards .img-wrapper{
+    width:  100px;
+    height: 100px;
+    background-size: cover;
+}*/
+section.research .cards-wrapper .cards .card-content{
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+section.research .cards-wrapper .cards .card-content h1{
+    font-size: 0.8rem;
+    line-height: 1;
+    font-weight: 800;
+    margin-bottom: 0rem;
+}
+
+section.research .cards-wrapper .cards .card-content{
+    color: var(--orangepri);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+section.research .cards-wrapper .cards .card-content span{
+    color: var(--blacklight);
+    font-size: 0.5rem;
+}
+
+section.research .cards-wrapper .cards .card-content p{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.6rem;
+    color: var(--black);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+section.diagram .diagram-img .bespoke-diagram{
+    height: 500px;
+    width: 1220px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+                /* MCDONALDS */
+
+
+section.research .cards-wrapper-mc{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+}
+
+section.research .cards-wrapper-mc .cards-mc{
+    background: var(--white);
+}
+
+section.research .cards-wrapper-mc .cards-mc .card-content-mc{
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+}
+
+section.research .cards-wrapper-mc .cards-mc .card-content-mc h1{
+    font-size: 0.8rem;
+    line-height: 1;
+    font-weight: 800;
+    margin-bottom: 0rem;
+}
+
+section.research .cards-wrapper-mc .cards-mc .card-content-mc{
+    color: var(--orangepri);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+section.research .cards-wrapper-mc .cards-mc .card-content-mc span{
+    color: var(--blacklight);
+    font-size: 0.5rem;
+}
+
+section.research .cards-wrapper-mc .cards-mc .card-content-mc p{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.6rem;
+    color: var(--black);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
